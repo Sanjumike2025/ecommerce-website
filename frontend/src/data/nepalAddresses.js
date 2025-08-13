@@ -1,0 +1,192 @@
+import provincesData from './provinces.json';
+
+// Dynamically import district and municipal data
+const districtsByProvince = {};
+const municipalsByDistrict = {};
+
+// This part would ideally be automated or pre-processed
+// For now, we'll manually list the provinces and districts
+// based on the directory listings I saw earlier.
+
+// Provinces
+export const provinces = provincesData.provinces;
+
+// Districts by Province (manual mapping for now)
+// In a real scenario, you'd have a more robust way to load these
+// or pre-process them into a single JSON.
+import bagmatiDistricts from './districtsByProvince/bagmati.json';
+import gandakiDistricts from './districtsByProvince/gandaki.json';
+import karnaliDistricts from './districtsByProvince/karnali.json';
+import lumbiniDistricts from './districtsByProvince/lumbini.json';
+import madheshDistricts from './districtsByProvince/madhesh.json';
+import pradesh1Districts from './districtsByProvince/pradesh-1.json';
+import sudurpaschimDistricts from './districtsByProvince/sudurpaschim.json';
+
+districtsByProvince.bagmati = bagmatiDistricts.districts;
+districtsByProvince.gandaki = gandakiDistricts.districts;
+districtsByProvince.karnali = karnaliDistricts.districts;
+districtsByProvince.lumbini = lumbiniDistricts.districts;
+districtsByProvince.madhesh = madheshDistricts.districts;
+districtsByProvince['pradesh-1'] = pradesh1Districts.districts;
+districtsByProvince.sudurpaschim = sudurpaschimDistricts.districts;
+
+export { districtsByProvince };
+
+// Municipals by District
+import achhamMunicipals from './municipalsByDistrict/achham.json';
+import arghakhanchiMunicipals from './municipalsByDistrict/arghakhanchi.json';
+import baglungMunicipals from './municipalsByDistrict/baglung.json';
+import baitadiMunicipals from './municipalsByDistrict/baitadi.json';
+import bajhangMunicipals from './municipalsByDistrict/bajhang.json';
+import bajuraMunicipals from './municipalsByDistrict/bajura.json';
+import bankeMunicipals from './municipalsByDistrict/banke.json';
+import baraMunicipals from './municipalsByDistrict/bara.json';
+import bardiyaMunicipals from './municipalsByDistrict/bardiya.json';
+import bhaktapurMunicipals from './municipalsByDistrict/bhaktapur.json';
+import bhojpurMunicipals from './municipalsByDistrict/bhojpur.json';
+import chitwanMunicipals from './municipalsByDistrict/chitwan.json';
+import dadeldhuraMunicipals from './municipalsByDistrict/dadeldhura.json';
+import dailekhMunicipals from './municipalsByDistrict/dailekh.json';
+import dangMunicipals from './municipalsByDistrict/dang.json';
+import darchulaMunicipals from './municipalsByDistrict/darchula.json';
+import dhadingMunicipals from './municipalsByDistrict/dhading.json';
+import dhankutaMunicipals from './municipalsByDistrict/dhankuta.json';
+import dhanushaMunicipals from './municipalsByDistrict/dhanusha.json';
+import dolakhaMunicipals from './municipalsByDistrict/dolakha.json';
+import dolpaMunicipals from './municipalsByDistrict/dolpa.json';
+import dotiMunicipals from './municipalsByDistrict/doti.json';
+import eastern_rukumMunicipals from './municipalsByDistrict/eastern-rukum.json';
+import gorkhaMunicipals from './municipalsByDistrict/gorkha.json';
+import gulmiMunicipals from './municipalsByDistrict/gulmi.json';
+import humlaMunicipals from './municipalsByDistrict/humla.json';
+import illamMunicipals from './municipalsByDistrict/illam.json';
+import jajarkotMunicipals from './municipalsByDistrict/jajarkot.json';
+import jhapaMunicipals from './municipalsByDistrict/jhapa.json';
+import jumlaMunicipals from './municipalsByDistrict/jumla.json';
+import kailaliMunicipals from './municipalsByDistrict/kailali.json';
+import kalikotMunicipals from './municipalsByDistrict/kalikot.json';
+import kanchanpurMunicipals from './municipalsByDistrict/kanchanpur.json';
+import kapilvastuMunicipals from './municipalsByDistrict/kapilvastu.json';
+import kaskiMunicipals from './municipalsByDistrict/kaski.json';
+import kathmanduMunicipals from './municipalsByDistrict/kathmandu.json';
+import kavrepalanchokMunicipals from './municipalsByDistrict/kavrepalanchok.json';
+import khotangMunicipals from './municipalsByDistrict/khotang.json';
+import lalitpurMunicipals from './municipalsByDistrict/lalitpur.json';
+import lamjungMunicipals from './municipalsByDistrict/lamjung.json';
+import mahottariMunicipals from './municipalsByDistrict/mahottari.json';
+import makwanpurMunicipals from './municipalsByDistrict/makwanpur.json';
+import manangMunicipals from './municipalsByDistrict/manang.json';
+import morangMunicipals from './municipalsByDistrict/morang.json';
+import muguMunicipals from './municipalsByDistrict/mugu.json';
+import mustangMunicipals from './municipalsByDistrict/mustang.json';
+import myagdiMunicipals from './municipalsByDistrict/myagdi.json';
+import nawalpurMunicipals from './municipalsByDistrict/nawalpur.json';
+import nuwakotMunicipals from './municipalsByDistrict/nuwakot.json';
+import okhaldhungaMunicipals from './municipalsByDistrict/okhaldhunga.json';
+import palpaMunicipals from './municipalsByDistrict/palpa.json';
+import panchtharMunicipals from './municipalsByDistrict/panchthar.json';
+import parasiMunicipals from './municipalsByDistrict/parasi.json';
+import parbatMunicipals from './municipalsByDistrict/parbat.json';
+import parsaMunicipals from './municipalsByDistrict/parsa.json';
+import pyuthanMunicipals from './municipalsByDistrict/pyuthan.json';
+import ramechhapMunicipals from './municipalsByDistrict/ramechhap.json';
+import rasuwaMunicipals from './municipalsByDistrict/rasuwa.json';
+import rautahatMunicipals from './municipalsByDistrict/rautahat.json';
+import rolpaMunicipals from './municipalsByDistrict/rolpa.json';
+import rupandehiMunicipals from './municipalsByDistrict/rupandehi.json';
+import salyanMunicipals from './municipalsByDistrict/salyan.json';
+import sankhuwasabhaMunicipals from './municipalsByDistrict/sankhuwasabha.json';
+import saptariMunicipals from './municipalsByDistrict/saptari.json';
+import sarlahiMunicipals from './municipalsByDistrict/sarlahi.json';
+import sindhuliMunicipals from './municipalsByDistrict/sindhuli.json';
+import sindhupalchokMunicipals from './municipalsByDistrict/sindhupalchok.json';
+import sirahaMunicipals from './municipalsByDistrict/siraha.json';
+import solukhumbuMunicipals from './municipalsByDistrict/solukhumbu.json';
+import sunsariMunicipals from './municipalsByDistrict/sunsari.json';
+import surkhetMunicipals from './municipalsByDistrict/surkhet.json';
+import syangjaMunicipals from './municipalsByDistrict/syangja.json';
+import tanahuMunicipals from './municipalsByDistrict/tanahu.json';
+import taplejungMunicipals from './municipalsByDistrict/taplejung.json';
+import tehrathumMunicipals from './municipalsByDistrict/tehrathum.json';
+import udayapurMunicipals from './municipalsByDistrict/udayapur.json';
+import western_rukumMunicipals from './municipalsByDistrict/western-rukum.json';
+
+municipalsByDistrict['achham'] = achhamMunicipals.municipals;
+municipalsByDistrict['arghakhanchi'] = arghakhanchiMunicipals.municipals;
+municipalsByDistrict['baglung'] = baglungMunicipals.municipals;
+municipalsByDistrict['baitadi'] = baitadiMunicipals.municipals;
+municipalsByDistrict['bajhang'] = bajhangMunicipals.municipals;
+municipalsByDistrict['bajura'] = bajuraMunicipals.municipals;
+municipalsByDistrict['banke'] = bankeMunicipals.municipals;
+municipalsByDistrict['bara'] = baraMunicipals.municipals;
+municipalsByDistrict['bardiya'] = bardiyaMunicipals.municipals;
+municipalsByDistrict['bhaktapur'] = bhaktapurMunicipals.municipals;
+municipalsByDistrict['bhojpur'] = bhojpurMunicipals.municipals;
+municipalsByDistrict['chitwan'] = chitwanMunicipals.municipals;
+municipalsByDistrict['dadeldhura'] = dadeldhuraMunicipals.municipals;
+municipalsByDistrict['dailekh'] = dailekhMunicipals.municipals;
+municipalsByDistrict['dang'] = dangMunicipals.municipals;
+municipalsByDistrict['darchula'] = darchulaMunicipals.municipals;
+municipalsByDistrict['dhading'] = dhadingMunicipals.municipals;
+municipalsByDistrict['dhankuta'] = dhankutaMunicipals.municipals;
+municipalsByDistrict['dhanusha'] = dhanushaMunicipals.municipals;
+municipalsByDistrict['dolakha'] = dolakhaMunicipals.municipals;
+municipalsByDistrict['dolpa'] = dolpaMunicipals.municipals;
+municipalsByDistrict['doti'] = dotiMunicipals.municipals;
+municipalsByDistrict['eastern-rukum'] = eastern_rukumMunicipals.municipals;
+municipalsByDistrict['gorkha'] = gorkhaMunicipals.municipals;
+municipalsByDistrict['gulmi'] = gulmiMunicipals.municipals;
+municipalsByDistrict['humla'] = humlaMunicipals.municipals;
+municipalsByDistrict['illam'] = illamMunicipals.municipals;
+municipalsByDistrict['jajarkot'] = jajarkotMunicipals.municipals;
+municipalsByDistrict['jhapa'] = jhapaMunicipals.municipals;
+municipalsByDistrict['jumla'] = jumlaMunicipals.municipals;
+municipalsByDistrict['kailali'] = kailaliMunicipals.municipals;
+municipalsByDistrict['kalikot'] = kalikotMunicipals.municipals;
+municipalsByDistrict['kanchanpur'] = kanchanpurMunicipals.municipals;
+municipalsByDistrict['kapilvastu'] = kapilvastuMunicipals.municipals;
+municipalsByDistrict['kaski'] = kaskiMunicipals.municipals;
+municipalsByDistrict['kathmandu'] = kathmanduMunicipals.municipals;
+municipalsByDistrict['kavrepalanchok'] = kavrepalanchokMunicipals.municipals;
+municipalsByDistrict['khotang'] = khotangMunicipals.municipals;
+municipalsByDistrict['lalitpur'] = lalitpurMunicipals.municipals;
+municipalsByDistrict['lamjung'] = lamjungMunicipals.municipals;
+municipalsByDistrict['mahottari'] = mahottariMunicipals.municipals;
+municipalsByDistrict['makwanpur'] = makwanpurMunicipals.municipals;
+municipalsByDistrict['manang'] = manangMunicipals.municipals;
+municipalsByDistrict['morang'] = morangMunicipals.municipals;
+municipalsByDistrict['mugu'] = muguMunicipals.municipals;
+municipalsByDistrict['mustang'] = mustangMunicipals.municipals;
+municipalsByDistrict['myagdi'] = myagdiMunicipals.municipals;
+municipalsByDistrict['nawalpur'] = nawalpurMunicipals.municipals;
+municipalsByDistrict['nuwakot'] = nuwakotMunicipals.municipals;
+municipalsByDistrict['okhaldhunga'] = okhaldhungaMunicipals.municipals;
+municipalsByDistrict['palpa'] = palpaMunicipals.municipals;
+municipalsByDistrict['panchthar'] = panchtharMunicipals.municipals;
+municipalsByDistrict['parasi'] = parasiMunicipals.municipals;
+municipalsByDistrict['parbat'] = parbatMunicipals.municipals;
+municipalsByDistrict['parsa'] = parsaMunicipals.municipals;
+municipalsByDistrict['pyuthan'] = pyuthanMunicipals.municipals;
+municipalsByDistrict['ramechhap'] = ramechhapMunicipals.municipals;
+municipalsByDistrict['rasuwa'] = rasuwaMunicipals.municipals;
+municipalsByDistrict['rautahat'] = rautahatMunicipals.municipals;
+municipalsByDistrict['rolpa'] = rolpaMunicipals.municipals;
+municipalsByDistrict['rupandehi'] = rupandehiMunicipals.municipals;
+municipalsByDistrict['salyan'] = salyanMunicipals.municipals;
+municipalsByDistrict['sankhuwasabha'] = sankhuwasabhaMunicipals.municipals;
+municipalsByDistrict['saptari'] = saptariMunicipals.municipals;
+municipalsByDistrict['sarlahi'] = sarlahiMunicipals.municipals;
+municipalsByDistrict['sindhuli'] = sindhuliMunicipals.municipals;
+municipalsByDistrict['sindhupalchok'] = sindhupalchokMunicipals.municipals;
+municipalsByDistrict['siraha'] = sirahaMunicipals.municipals;
+municipalsByDistrict['solukhumbu'] = solukhumbuMunicipals.municipals;
+municipalsByDistrict['sunsari'] = sunsariMunicipals.municipals;
+municipalsByDistrict['surkhet'] = surkhetMunicipals.municipals;
+municipalsByDistrict['syangja'] = syangjaMunicipals.municipals;
+municipalsByDistrict['tanahu'] = tanahuMunicipals.municipals;
+municipalsByDistrict['taplejung'] = taplejungMunicipals.municipals;
+municipalsByDistrict['tehrathum'] = tehrathumMunicipals.municipals;
+municipalsByDistrict['udayapur'] = udayapurMunicipals.municipals;
+municipalsByDistrict['western-rukum'] = western_rukumMunicipals.municipals;
+
+export { municipalsByDistrict };
